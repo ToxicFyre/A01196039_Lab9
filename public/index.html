@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>This is the index </title>
+</head>
+<body>
+<h1> Blog interaction page </h1>
+<ul class="post-list">
+</ul>
+
+<div><input type="submit" value="Display all posts" class="getAllButton"></div>
+
+<form class="searchByAuthor-postForm">
+    <fieldset>
+        <legend> Search by author </legend>
+        Author: <div><input type="text" class="authorIn searchByAuthor-postForm" required></div>
+        <input type="submit" value="Search">
+    </fieldset>
+</form>
+<form class="new-postForm">
+    <fieldset>
+        <legend> Add new post </legend>
+        Title: <div><input type="text" class="titleIn new-postForm" required></div>
+        Content: <div><textarea rows="3" cols="50" class="contentInBox new-postForm" required></textarea></div>
+        Author: <div><input type="text" class="authorIn new-postForm" required></div>
+        <input type="submit" value="Submit new">
+    </fieldset>
+</form>
+<form class="update-postForm">
+    <fieldset>
+        <legend> Update post </legend>
+        UID of post to update: <input type="text" name="usern" class="uidIn update-postForm" required><hr>
+        Title: <div><input type="text" class="titleIn update-postForm"></div>
+        Content: <div><textarea rows="3" cols="50" class="contentInBox update-postForm"></textarea></div>
+        Author: <div><input type="text" class="authorIn update-postForm"></div>
+        <input type="submit" value="Update">
+    </fieldset>
+</form>
+<form class="delete-postForm">
+    <fieldset>
+        <legend> Delete post </legend>
+        UID of post to delete: <input type="text" name="usern" class="uidIn delete-postForm" required>
+        <div><input type="submit" value="Delete"></div>
+    </fieldset>
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"> </script>
+</body>
+</html>
