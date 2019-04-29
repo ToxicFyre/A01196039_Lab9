@@ -104,6 +104,8 @@ $('.new-postForm').on("submit", function () {
         }
     };
 
+    $('.post-list').html("");
+
     fetch(url, settings)
         .then(response => {
             console.log(response);
@@ -144,6 +146,8 @@ $('.update-postForm').on("submit", function () {
         }
     };
 
+    $('.post-list').html("");
+
     fetch(url, settings)
         .then(response => {
             console.log(response);
@@ -178,6 +182,9 @@ $('.delete-postForm').on("submit", function () {
             'Content-Type': 'application/json'
         }
     };
+
+
+    $('.post-list').html("");
 
     fetch(url, settings)
         .then(response => {
