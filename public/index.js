@@ -108,7 +108,6 @@ $('.new-postForm').on("submit", function () {
 
     fetch(url, settings)
         .then(response => {
-            console.log(response);
             if (response.ok) {
                 return response.json();
             }
@@ -150,7 +149,6 @@ $('.update-postForm').on("submit", function () {
 
     fetch(url, settings)
         .then(response => {
-            console.log(response);
             if (response.ok) {
                 return response.json();
             }
@@ -188,7 +186,6 @@ $('.delete-postForm').on("submit", function () {
 
     fetch(url, settings)
         .then(response => {
-            console.log(response);
             if (response.ok) {
                 return response.json();
             }
