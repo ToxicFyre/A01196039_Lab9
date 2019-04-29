@@ -10,22 +10,12 @@ function displaySportList(data) {
     for (let i = 0; i < data.posts.length; i++) {
         $('.post-list').append(
             `<li>
-                ${i}
-            </li>
-            <li>
-                uid : ${data.posts[i].uid}
-            </li>
-            <li>
-                title : ${data.posts[i].title}
-            </li>
-            <li>
-                content : ${data.posts[i].content}
-            </li>
-            <li>
-                author : ${data.posts[i].author}
-            </li>
-            <li>
-                publish date : ${data.posts[i].publishDate}
+                <div>${i}</div>
+                <div>uid : ${data.posts[i].uid}</div>
+                <div>title : ${data.posts[i].title}</div>
+                <div>content : ${data.posts[i].content}</div>
+                <div>author : ${data.posts[i].author}</div>
+                <div>publish date : ${data.posts[i].publishDate}</div>
             </li>`);
     }
 }
