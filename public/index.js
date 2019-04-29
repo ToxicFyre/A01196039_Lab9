@@ -10,7 +10,6 @@ function displaySportList(data) {
     for (let i = 0; i < data.posts.length; i++) {
         $('.post-list').append(
             `<li>
-                <div>${i}</div>
                 <div>uid : ${data.posts[i].uid}</div>
                 <div>title : ${data.posts[i].title}</div>
                 <div>content : ${data.posts[i].content}</div>
